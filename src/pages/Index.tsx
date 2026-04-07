@@ -279,11 +279,63 @@ const Footer = () => (
   </footer>
 );
 
+const GodsEyeSection = () => (
+  <section id="gods-eye" className="py-28 border-t border-border relative overflow-hidden">
+    <div className="absolute inset-0 gradient-mesh" />
+    <div className="relative container mx-auto px-6">
+      <div className="text-center mb-12">
+        <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">God's Eye Module</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Real-Time Target Acquisition</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Multi-feed surveillance fusion with live watch-list matching, radar tracking, and camera orchestration — 
+          inspired by next-gen threat intelligence systems.
+        </p>
+      </div>
+      
+      {/* Global map */}
+      <div className="relative rounded-lg overflow-hidden border border-border mb-8">
+        <img src={godsEyeMap} alt="Global surveillance network" className="w-full opacity-60" loading="lazy" width={1920} height={800} />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
+        <div className="absolute bottom-6 left-6 font-mono text-xs text-primary">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+            196 ACTIVE NODES
+          </div>
+          <div className="text-muted-foreground">Global Coverage • 14 Countries • 38 Sites</div>
+        </div>
+      </div>
+
+      {/* Tracker interface */}
+      <div className="rounded-lg border border-border overflow-hidden box-glow">
+        <GodsEyeTracker />
+      </div>
+    </div>
+  </section>
+);
+
+const PredictiveSection = () => (
+  <section className="py-28 border-t border-border relative">
+    <div className="absolute inset-0 gradient-mesh" />
+    <div className="relative container mx-auto px-6">
+      <div className="text-center mb-12">
+        <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">Predictive Intelligence</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Threat Prediction Engine</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Graph-based analytics forecast intrusion windows and behavioral anomalies before they happen.
+        </p>
+      </div>
+      <PredictiveEngine />
+    </div>
+  </section>
+);
+
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <HeroSection />
     <CapabilitiesSection />
+    <GodsEyeSection />
+    <PredictiveSection />
     <ArchitectureSection />
     <DeploymentSection />
     <ComplianceSection />

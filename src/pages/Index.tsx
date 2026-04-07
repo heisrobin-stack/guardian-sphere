@@ -16,9 +16,9 @@ const Navbar = () => (
       </div>
       <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#capabilities" className="hover:text-primary transition-colors">Capabilities</a>
+        <a href="#gods-eye" className="hover:text-primary transition-colors">God's Eye</a>
         <a href="#architecture" className="hover:text-primary transition-colors">Architecture</a>
         <a href="#deployment" className="hover:text-primary transition-colors">Deployment</a>
-        <a href="#compliance" className="hover:text-primary transition-colors">Compliance</a>
       </div>
       <button className="px-5 py-2 text-sm font-semibold bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
         Request Demo

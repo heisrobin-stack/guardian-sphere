@@ -358,6 +358,7 @@ const Index = () => (
     <CapabilitiesSection />
     <GodsEyeSection />
     <PredictiveSection />
+    <FaceRecSection />
     <OsintSection />
     <ArchitectureSection />
     <DeploymentSection />

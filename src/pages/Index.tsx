@@ -4,6 +4,7 @@ import godsEyeMap from "@/assets/gods-eye-map.jpg";
 import GodsEyeTracker from "@/components/GodsEyeTracker";
 import PredictiveEngine from "@/components/PredictiveEngine";
 import OsintDashboard from "@/components/OsintDashboard";
+import FaceRecognition from "@/components/FaceRecognition";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">

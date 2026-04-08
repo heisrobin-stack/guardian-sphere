@@ -330,6 +330,25 @@ const PredictiveSection = () => (
   </section>
 );
 
+const OsintSection = () => (
+  <section id="osint" className="py-28 border-t border-border relative">
+    <div className="absolute inset-0 gradient-mesh" />
+    <div className="relative container mx-auto px-6">
+      <div className="text-center mb-12">
+        <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">Intelligence Toolkit</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">OSINT & Recon Tools</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Integrated open-source intelligence tools for host discovery, domain analysis, 
+          email reconnaissance, and anonymous operations — all within one command layer.
+        </p>
+      </div>
+      <div className="max-w-5xl mx-auto">
+        <OsintDashboard />
+      </div>
+    </div>
+  </section>
+);
+
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
@@ -337,6 +356,7 @@ const Index = () => (
     <CapabilitiesSection />
     <GodsEyeSection />
     <PredictiveSection />
+    <OsintSection />
     <ArchitectureSection />
     <DeploymentSection />
     <ComplianceSection />

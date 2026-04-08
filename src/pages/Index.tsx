@@ -19,6 +19,7 @@ const Navbar = () => (
       <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#capabilities" className="hover:text-primary transition-colors">Capabilities</a>
         <a href="#gods-eye" className="hover:text-primary transition-colors">God's Eye</a>
+        <a href="#face-rec" className="hover:text-primary transition-colors">Face Rec</a>
         <a href="#osint" className="hover:text-primary transition-colors">OSINT Tools</a>
         <a href="#architecture" className="hover:text-primary transition-colors">Architecture</a>
       </div>

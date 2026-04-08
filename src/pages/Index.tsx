@@ -4,6 +4,7 @@ import godsEyeMap from "@/assets/gods-eye-map.jpg";
 import GodsEyeTracker from "@/components/GodsEyeTracker";
 import PredictiveEngine from "@/components/PredictiveEngine";
 import OsintDashboard from "@/components/OsintDashboard";
+import FaceRecognition from "@/components/FaceRecognition";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
@@ -18,6 +19,7 @@ const Navbar = () => (
       <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#capabilities" className="hover:text-primary transition-colors">Capabilities</a>
         <a href="#gods-eye" className="hover:text-primary transition-colors">God's Eye</a>
+        <a href="#face-rec" className="hover:text-primary transition-colors">Face Rec</a>
         <a href="#osint" className="hover:text-primary transition-colors">OSINT Tools</a>
         <a href="#architecture" className="hover:text-primary transition-colors">Architecture</a>
       </div>
@@ -330,6 +332,25 @@ const PredictiveSection = () => (
   </section>
 );
 
+const FaceRecSection = () => (
+  <section id="face-rec" className="py-28 border-t border-border relative">
+    <div className="absolute inset-0 gradient-mesh" />
+    <div className="relative container mx-auto px-6">
+      <div className="text-center mb-12">
+        <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">Biometric Module</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Face Recognition</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Upload an image or use your device camera for real-time face detection, 
+          watch-list matching, and identity confidence scoring.
+        </p>
+      </div>
+      <div className="max-w-3xl mx-auto">
+        <FaceRecognition />
+      </div>
+    </div>
+  </section>
+);
+
 const OsintSection = () => (
   <section id="osint" className="py-28 border-t border-border relative">
     <div className="absolute inset-0 gradient-mesh" />
@@ -356,6 +377,7 @@ const Index = () => (
     <CapabilitiesSection />
     <GodsEyeSection />
     <PredictiveSection />
+    <FaceRecSection />
     <OsintSection />
     <ArchitectureSection />
     <DeploymentSection />

@@ -332,6 +332,7 @@ const PredictiveSection = () => (
   </section>
 );
 
+/* Face Recognition Section */
 const FaceRecSection = () => (
   <section id="face-rec" className="py-28 border-t border-border relative">
     <div className="absolute inset-0 gradient-mesh" />

@@ -1,0 +1,1 @@
+CREATE POLICY "Anyone can delete tracking sessions" ON public.tracking_sessions FOR DELETE USING (true);

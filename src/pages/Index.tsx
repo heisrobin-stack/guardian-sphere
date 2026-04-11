@@ -373,12 +373,32 @@ const OsintSection = () => (
   </section>
 );
 
+const LiveTrackerSection = () => (
+  <section id="live-tracker" className="py-28 border-t border-border relative">
+    <div className="absolute inset-0 gradient-mesh" />
+    <div className="relative container mx-auto px-6">
+      <div className="text-center mb-12">
+        <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">GPS Tracking Module</p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Live Device Tracker</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Generate tracking links and send them to any device. When opened with GPS enabled, 
+          you'll see their real-time location, speed, and movement history.
+        </p>
+      </div>
+      <div className="max-w-5xl mx-auto">
+        <LiveTracker />
+      </div>
+    </div>
+  </section>
+);
+
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <HeroSection />
     <CapabilitiesSection />
     <GodsEyeSection />
+    <LiveTrackerSection />
     <PredictiveSection />
     <FaceRecSection />
     <OsintSection />

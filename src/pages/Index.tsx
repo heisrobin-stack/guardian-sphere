@@ -1,10 +1,11 @@
-import { Shield, Eye, Brain, Radio, Server, Users, Lock, ChevronRight, Scan, Activity, MapPin, AlertTriangle, Search } from "lucide-react";
+import { Shield, Eye, Brain, Radio, Server, Users, Lock, ChevronRight, Scan, Activity, MapPin, AlertTriangle, Search, Crosshair } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import godsEyeMap from "@/assets/gods-eye-map.jpg";
 import GodsEyeTracker from "@/components/GodsEyeTracker";
 import PredictiveEngine from "@/components/PredictiveEngine";
 import OsintDashboard from "@/components/OsintDashboard";
 import FaceRecognition from "@/components/FaceRecognition";
+import LiveTracker from "@/components/LiveTracker";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
@@ -19,6 +20,7 @@ const Navbar = () => (
       <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
         <a href="#capabilities" className="hover:text-primary transition-colors">Capabilities</a>
         <a href="#gods-eye" className="hover:text-primary transition-colors">God's Eye</a>
+        <a href="#live-tracker" className="hover:text-primary transition-colors">Live Tracker</a>
         <a href="#face-rec" className="hover:text-primary transition-colors">Face Rec</a>
         <a href="#osint" className="hover:text-primary transition-colors">OSINT Tools</a>
         <a href="#architecture" className="hover:text-primary transition-colors">Architecture</a>
